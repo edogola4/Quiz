@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { fetchQuizQuestions } from './API';
 //import QuestionCard from './components/QuestionCard';
-import { QuestionCard } from './Components/QuestionCard';
+import  QuestionCard  from './Components/QuestionCard';
 import { QuestionsState, Difficulty, Category } from './API';
 import { GlobalStyle, Wrapper } from './App.styles';
 import correctSound from './assets/sounds/correct.mp3';
