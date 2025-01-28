@@ -47,9 +47,26 @@ const App: React.FC = () => {
       return () => clearTimeout(timer);
     } else if (timeLeft === 0 && !gameOver) {
       timeUpAudio.current.play();
-      nextQuestion();
+     // nextQuestion();
     }
   }, [timeLeft, gameOver]);
+
+  // memorizing nextquestion with useCallback
+  /*const nextQuestions = useCallback(() => {
+    const nextQ = number + 1;
+    if (nextQ === TOTAL_QUESTIONS) {
+      if (score > highScore) {
+        localStorage.setItem('quizHighScore', score.toString());
+        setHighScore(score);
+      }
+      setGameOver(true);
+    } else {
+      setNumber(nextQ);
+      setTimeLeft(15);
+      setFeedback(null);
+    }
+  }, [number, score, highScore]);
+  */
 
   const startTrivia = async () => {
     try {
