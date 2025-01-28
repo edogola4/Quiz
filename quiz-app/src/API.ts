@@ -73,10 +73,12 @@ export enum Difficulty {
     }
   };
   
-  // Helper function to shuffle answers
-  const shuffleArray = (array: any[]): any[] => {
+ 
+ // Helper function to shuffle answers
+const shuffleArray = <T>(array: T[]): T[] => {
     return [...array].sort(() => Math.random() - 0.5);
   };
+  
   
   // Helper function to decode HTML entities
   const decodeHTML = (html: string): string => {
