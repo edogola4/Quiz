@@ -3,9 +3,13 @@ import { fetchQuizQuestions } from './API';
 import  QuestionCard  from './Components/QuestionCard';
 import { QuestionsState, Difficulty, Category } from './API';
 import { GlobalStyle, Wrapper } from './App.styles';
+//import correctSound from './Assets/Sounds/Correct.mp3';
+//import wrongSound from './Assets/Sounds/wrong.mp3';
+//import timesUpSound from './Assets/Sounds/times-up.mp3';
 import correctSound from './Assets/Sounds/Correct.mp3';
 import wrongSound from './Assets/Sounds/wrong.mp3';
 import timesUpSound from './Assets/Sounds/times-up.mp3';
+
 
 export type AnswerObject = {
   question: string;
@@ -47,7 +51,7 @@ const App: React.FC = () => {
       return () => clearTimeout(timer);
     } else if (timeLeft === 0 && !gameOver) {
       timeUpAudio.current.play();
-     // nextQuestion();
+      nextQuestion();
     }
   }, [timeLeft, gameOver]);
 
