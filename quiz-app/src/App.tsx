@@ -3,9 +3,9 @@ import { fetchQuizQuestions } from './API';
 import QuestionCard from './Components/QuestionCard';
 import { QuestionsState, Difficulty, Category } from './API';
 import { GlobalStyle, Wrapper } from './App.styles';
-import correctSound from './assets/sounds/';
-import wrongSound from '';
-import timesUpSound from ';
+import correctSound from './assets/sounds/correct.mp3';
+import wrongSound from './assets/sounds/wrong.mp3';
+import timesUpSound from './assets/sounds/times-up.mp3';
 
 export type AnswerObject = {
   question: string;
