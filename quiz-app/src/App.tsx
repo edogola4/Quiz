@@ -133,6 +133,7 @@ const App: React.FC = () => {
               <div className="setting-group">
                 <label>Category:</label>
                 <select
+                aria-label='Select Category'
                   value={category}
                   onChange={(e) => setCategory(Number(e.target.value))}
                 >
@@ -148,6 +149,7 @@ const App: React.FC = () => {
               <div className="setting-group">
                 <label>Difficulty:</label>
                 <select
+                aria-label='Select Difficulty'
                   value={difficulty}
                   onChange={(e) => setDifficulty(e.target.value as Difficulty)}
                 >
