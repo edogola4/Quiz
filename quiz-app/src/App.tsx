@@ -70,6 +70,8 @@ const App: React.FC = () => {
       setTimeLeft(15);
       setFeedback(null);
     } catch (err) {
+      console.error('Error fetching quiz questions:', err);
+  setError('Failed to load questions. Please try again.');
       setError('Failed to load questions. Please try again.');
       setGameOver(true);
     } finally {
