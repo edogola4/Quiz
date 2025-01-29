@@ -39,7 +39,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.79);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
