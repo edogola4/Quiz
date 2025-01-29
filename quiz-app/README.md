@@ -67,12 +67,12 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 
 Choose from diverse categories including:
 
-General Knowledge
-Science & Nature
-Computers
-Mathematics
-History
-Sports
-Art
-Geography
-And more!
+- General Knowledge
+- Science & Nature
+- Computers
+- Mathematics
+- History
+- Sports
+- Art
+- Geography
+- And more!
