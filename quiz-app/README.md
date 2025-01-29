@@ -134,3 +134,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Sound effects from freesound.org
 - React community for awesome tools and libraries
 - Myself for coding it 
+
+### Enjoy the quiz, and may the best trivia master win! 🧠
