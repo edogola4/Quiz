@@ -59,3 +59,4 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 - *Styled Components*
 - *Open Trivia Database API*
 - *HTML5 Audio for sound effects*
+- *Vite*
