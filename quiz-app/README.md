@@ -98,3 +98,11 @@ Choose from diverse categories including:
 - High score persistence using localStorage
 
 ## 📂 Project Structure
+/src
+├── API.ts              # API configuration and types
+├── App.tsx             # Main application component
+├── App.styles.ts       # Global styles
+├── Components
+│   └── QuestionCard    # Question display component
+├── assets
+│   └── sounds         # Sound effects
