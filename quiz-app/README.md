@@ -47,6 +47,6 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 - Track your score and progress in real-time
 
 **3.Post-Game:**
-View final score and high score
-Review all questions with correct/incorrect indicators
-Option to play again with new settings
+- View final score and high score
+- Review all questions with correct/incorrect indicators
+- Option to play again with new settings
