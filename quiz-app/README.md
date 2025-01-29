@@ -90,3 +90,9 @@ Choose from diverse categories including:
 - Base time: 15 seconds/question
 - Correct answer: +5 seconds (max 30s)
 - Wrong answer: -5 seconds (min 5s)
+
+
+**4.Score System**
+
+- 1 point per correct answer
+- High score persistence using localStorage
