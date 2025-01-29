@@ -50,3 +50,12 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 - View final score and high score
 - Review all questions with correct/incorrect indicators
 - Option to play again with new settings
+
+
+## 🔧 Technologies
+
+- *React 18*
+- *TypeScript*
+- *Styled Components*
+- *Open Trivia Database API*
+- *HTML5 Audio for sound effects*
