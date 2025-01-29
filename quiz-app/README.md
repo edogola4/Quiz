@@ -24,4 +24,4 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/edogola4/trivia-challenge.git**
+   git clone https://github.com/edogola4/trivia-challenge.git
