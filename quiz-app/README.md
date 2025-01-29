@@ -60,3 +60,19 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 - *Open Trivia Database API*
 - *HTML5 Audio for sound effects*
 - *Vite*
+
+## 🌟 Features in Detail
+
+**1.Categories**
+
+Choose from diverse categories including:
+
+General Knowledge
+Science & Nature
+Computers
+Mathematics
+History
+Sports
+Art
+Geography
+And more!
