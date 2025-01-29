@@ -24,8 +24,9 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/edogola4/trivia-challenge.git
+   git clone https://github.com/edogola4/quiz-app.git
 
 2. Install dependencies:
     yarn install / npm install
-4. 
+4. Start the development server:
+   npm start / yarn run dev
