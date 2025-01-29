@@ -135,4 +135,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - React community for awesome tools and libraries
 - Myself for coding it 
 
-### Enjoy the quiz, and may the best trivia master win! 🧠
+                       Enjoy the quiz, and may the best trivia master win! 🧠
