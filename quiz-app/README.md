@@ -133,6 +133,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Open Trivia Database for question data
 - Sound effects from freesound.org
 - React community for awesome tools and libraries
-- Myself for coding it 
+- Myself for coding it
+
+  ## Contributing
+
+If you want to contribute to this project, feel free to fork the repository, make your changes, and submit a pull request. Contributions are always welcome!
 
                        Enjoy the quiz, and may the best trivia master win! 🧠
