@@ -32,3 +32,6 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 3. Start the development server:
    
    npm start / yarn run dev
+
+
+## 🎮 Usage
