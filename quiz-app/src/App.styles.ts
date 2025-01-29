@@ -45,7 +45,7 @@ export const Wrapper = styled.div`
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 
-  .settings {
+  /*.settings {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
@@ -79,7 +79,79 @@ export const Wrapper = styled.div`
         transform: translateY(-2px);
       }
     }
+  }*/
+  .settings {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.setting-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: slideIn 0.5s ease-out;
+
+  label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: color 0.3s ease;
   }
+
+  select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #d38558;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    min-width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: white;
+      transform: translateY(-2px);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      border-color: #ffa559;
+      box-shadow: 0px 0px 5px rgba(255, 165, 89, 0.5);
+    }
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .setting-group select {
+    width: 100%;
+  }
+}
+
 
   h1 {
     font-family: 'Fascinate Inline', cursive;
@@ -309,7 +381,7 @@ export const Wrapper = styled.div`
 
 
 
-  button {
+  /*button {
     cursor: pointer;
     background: linear-gradient(180deg, #ffffff, #ffcc91);
     border: 2px solid #d38558;
@@ -353,5 +425,101 @@ export const Wrapper = styled.div`
     .results {
       padding: 1rem;
     }
-  }
+  }*/
+ button {
+    cursor: pointer;
+    background: linear-gradient(180deg, #ffffff, #ffcc91);
+    border: 2px solid #d38558;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 40px;
+    margin: 20px 0;
+    padding: 0 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: popIn 0.5s ease-out forwards;
+    
+    /* Hover Effect */
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 10px 20px rgba(255, 165, 89, 0.5);
+        background: linear-gradient(180deg, #fff4e6, #ffa559);
+    }
+
+    /* Pressed (Active) Effect */
+    &:active {
+        transform: translateY(2px);
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Disabled State */
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        background: #ccc;
+        border: 2px solid #aaa;
+        box-shadow: none;
+    }
+
+    /* Ripple Effect */
+    &::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.5);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+        border-radius: 50%;
+    }
+
+    &:active::after {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Animations */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .settings {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .setting-group select {
+        width: 100%;
+    }
+
+    .results {
+        padding: 1rem;
+    }
+}
+
+
 `;
