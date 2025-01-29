@@ -246,18 +246,34 @@ export const Wrapper = styled.div`
     transform: translateY(10px);
     animation: fadeIn 0.5s ease-in-out forwards;
     border: 2px solid transparent; 
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, 
+                transform 0.2s ease-in-out, 
+                border-color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+
+    /* Hover effect */
+    &:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(1.02); /* Slight zoom effect */
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
 }
 
+/* ✅ Correct Answer - Green Pulse Effect */
 .answer-item.correct {
     border-color: #00c853; /* Green */
     background: rgba(0, 200, 83, 0.1);
+    animation: fadeIn 0.5s ease-in-out forwards, pulse 1.5s infinite ease-in-out;
 }
 
+/* ❌ Incorrect Answer - Shake Effect */
 .answer-item.incorrect {
     border-color: #d32f2f; /* Red */
     background: rgba(211, 47, 47, 0.1);
+    animation: fadeIn 0.5s ease-in-out forwards, shake 0.5s ease-in-out;
 }
+
+/* Fade In Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -268,6 +284,28 @@ export const Wrapper = styled.div`
         transform: translateY(0);
     }
 }
+
+/* ✅ Pulse Effect for Correct Answers */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 200, 83, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 200, 83, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 200, 83, 0.2);
+    }
+}
+
+/* ❌ Shake Effect for Incorrect Answers */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
 
 
 
