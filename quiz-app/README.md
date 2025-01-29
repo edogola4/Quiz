@@ -128,3 +128,9 @@ Choose from diverse categories including:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
+## 🙌 Credits
+
+- Open Trivia Database for question data
+- Sound effects from freesound.org
+- React community for awesome tools and libraries
+- Myself for coding it 
