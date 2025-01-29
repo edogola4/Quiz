@@ -39,3 +39,9 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
    - Select your preferred category from the dropdown
    - Choose difficulty level (Easy/Medium/Hard)
    - Click "Start Quiz"
+
+**2.Gameplay:**
+- Read each question carefully
+- Select your answer before time runs out
+- Earn bonus time for correct answers
+- Track your score and progress in real-time
