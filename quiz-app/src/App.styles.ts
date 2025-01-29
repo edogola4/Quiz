@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
   width: 100%;
   max-width: 800px;
   padding: 20px;
-  color: white;
+  color: black;
 
   .start-screen {
     display: flex;
