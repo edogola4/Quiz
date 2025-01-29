@@ -106,3 +106,21 @@ Choose from diverse categories including:
 - │   └── QuestionCard    - # Question display component
 - ├── assets
 - │   └── sounds         - # Sound effects
+
+
+
+## 🙋 FAQ
+
+**Q: Where are the questions from?**
+- A: Questions are sourced from the Open Trivia Database.
+
+**Q: Can I add more categories?**
+- A: Yes! Modify the Category enum in API.ts to add more categories supported by the API.
+
+**Q: How are scores persisted?**
+- A: High scores are saved in the browser's local storage.
+
+**Q: Why am I seeing an error message?**
+- A: Errors typically occur due to API connectivity issues. Check your internet connection and try again.
+
+
