@@ -27,6 +27,8 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
    git clone https://github.com/edogola4/quiz-app.git
 
 2. Install dependencies:
+   
     yarn install / npm install
-4. Start the development server:
+3. Start the development server:
+   
    npm start / yarn run dev
