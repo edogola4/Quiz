@@ -20,6 +20,10 @@ export enum Difficulty {
     CELEBRITIES = 26,
     ANIMALS = 27,
     GEOGRAPHY = 22,
+    LITERATURE = 20,
+    ECONOMICS = 13,
+    //POLITICAL SCIENCE = 22,
+    PROGRAMMING = 112,
   }
   
   export type Question = {
