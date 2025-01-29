@@ -77,8 +77,16 @@ Choose from diverse categories including:
 - Geography
 - And more!
 
+
 **2.Difficulty Modes**
 
 - **Easy:** Straightforward questions
 - **Medium:** Moderately challenging
 - **Hard:** Expert-level questions
+
+
+**3.Time Mechanics**
+
+- Base time: 15 seconds/question
+- Correct answer: +5 seconds (max 30s)
+- Wrong answer: -5 seconds (min 5s)
