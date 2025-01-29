@@ -96,3 +96,5 @@ Choose from diverse categories including:
 
 - 1 point per correct answer
 - High score persistence using localStorage
+
+## 📂 Project Structure
