@@ -35,7 +35,7 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 
 
 ## 🎮 Usage
-- **1. Setup Screen:**
+ **1. Setup Screen:**
 - Select your preferred category from the dropdown
 - Choose difficulty level (Easy/Medium/Hard)
 - Click "Start Quiz"
