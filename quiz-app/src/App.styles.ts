@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BGImage});
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${BGImage});
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -68,6 +68,7 @@ export const Wrapper = styled.div`
       border-radius: 8px;
       border: 2px solid #d38558;
       background: rgba(255, 255, 255, 0.9);
+      //background: rgba(157, 215, 255, 0.89);
       font-size: 1rem;
       min-width: 200px;
       cursor: pointer;
@@ -106,7 +107,7 @@ export const Wrapper = styled.div`
 
     p {
       font-size: 1.2rem;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 255, 0, 1);
       padding: 0.5rem 1rem;
       border-radius: 8px;
     }
