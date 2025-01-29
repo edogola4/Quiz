@@ -99,10 +99,10 @@ Choose from diverse categories including:
 
 ## 📂 Project Structure
 - /src
-- ├── API.ts              # API configuration and types
-- ├── App.tsx             # Main application component
-- ├── App.styles.ts       # Global styles
+- ├── API.ts              - # API configuration and types
+- ├── App.tsx             - # Main application component
+- ├── App.styles.ts       - # Global styles
 - ├── Components
-- │   └── QuestionCard    # Question display component
+- │   └── QuestionCard    - # Question display component
 - ├── assets
-- │   └── sounds         # Sound effects
+- │   └── sounds         - # Sound effects
