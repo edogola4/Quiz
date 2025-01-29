@@ -123,4 +123,8 @@ Choose from diverse categories including:
 **Q: Why am I seeing an error message?**
 - A: Errors typically occur due to API connectivity issues. Check your internet connection and try again.
 
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 
