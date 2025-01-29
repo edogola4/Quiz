@@ -76,3 +76,9 @@ Choose from diverse categories including:
 - Art
 - Geography
 - And more!
+
+**2.Difficulty Modes**
+
+- **Easy:** Straightforward questions
+- **Medium:** Moderately challenging
+- **Hard:** Expert-level questions
