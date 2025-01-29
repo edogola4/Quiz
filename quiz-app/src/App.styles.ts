@@ -145,7 +145,8 @@ export const Wrapper = styled.div`
 
   .error {
     color: #ff4444;
-    background: rgba(255, 255, 255, 0.9);
+    //background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 82, 82, 0.9); /* Soft red for errors */
     padding: 1rem;
     border-radius: 8px;
     margin: 1rem 0;
@@ -162,7 +163,9 @@ export const Wrapper = styled.div`
   }
 
   .results {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: #fff;
     padding: 2rem;
     border-radius: 15px;
     width: 100%;
@@ -174,7 +177,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  .answers-review {
+  /*.answers-review {
     max-height: 400px;
     overflow-y: auto;
     padding-right: 1rem;
@@ -192,8 +195,34 @@ export const Wrapper = styled.div`
       border-radius: 4px;
     }
   }
+    */
+  .answers-review {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem;
+    scroll-behavior: smooth; /* Smooth scrolling */
 
-  .answer-item {
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px; /* Soft edges */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #00a8cc, #0085a3); /* Gradient effect */
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #00c0e4; /* Lighter hover effect */
+    }
+}
+
+
+  /*.answer-item {
     background: rgba(255, 255, 255, 0.1);
     padding: 1rem;
     border-radius: 8px;
@@ -207,6 +236,40 @@ export const Wrapper = styled.div`
       margin-bottom: 0;
     }
   }
+    */
+  .answer-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s ease-in-out forwards;
+    border: 2px solid transparent; 
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.answer-item.correct {
+    border-color: #00c853; /* Green */
+    background: rgba(0, 200, 83, 0.1);
+}
+
+.answer-item.incorrect {
+    border-color: #d32f2f; /* Red */
+    background: rgba(211, 47, 47, 0.1);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
   button {
     cursor: pointer;

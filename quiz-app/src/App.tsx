@@ -210,12 +210,23 @@ const App: React.FC = () => {
             <h2>Final Score: {score}/{TOTAL_QUESTIONS}</h2>
             <div className="answers-review">
               {userAnswers.map((answer, index) => (
-                <div key={index} className="answer-item">
+                /*<div key={index} className="answer-item">
                   <p dangerouslySetInnerHTML={{ __html: answer.question }} />
                   <p>Your answer: {answer.answer} 
                     {answer.correct ? ' ✅' : ` ❌ (Correct: ${answer.correctAnswer})`}
                   </p>
+                </div>*/
+                <div
+                  key={index}
+                  className={`answer-item ${answer.correct ? "correct" : "incorrect"}`}
+                >
+                  <p dangerouslySetInnerHTML={{ __html: answer.question }} />
+                  <p>
+                    Your answer: {answer.answer}
+                    {answer.correct ? ' ✅' : ` ❌ (Correct: ${answer.correctAnswer})`}
+                  </p>
                 </div>
+
               ))}
             </div>
           </div>
