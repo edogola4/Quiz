@@ -45,3 +45,8 @@ A dynamic quiz application built with React, Vite and TypeScript that tests your
 - Select your answer before time runs out
 - Earn bonus time for correct answers
 - Track your score and progress in real-time
+
+**3.Post-Game:**
+View final score and high score
+Review all questions with correct/incorrect indicators
+Option to play again with new settings
