@@ -2,7 +2,6 @@
 
 A dynamic quiz application built with React, Vite and TypeScript that tests your knowledge across various categories and difficulty levels. Features timed questions, sound feedback, and progress tracking.
 
-<!--![Quiz Screenshot](./quiz-app/src/images/trivia.png)-->
 ![Quiz Screenshot](./quiz-app/src/images/trivia.png)
 
 
